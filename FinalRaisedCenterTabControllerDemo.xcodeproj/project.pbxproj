@@ -19,8 +19,6 @@
 		8020073D19701B80003DDD2C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020073C19701B80003DDD2C /* XCTest.framework */; };
 		8020073E19701B80003DDD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020071D19701B80003DDD2C /* Foundation.framework */; };
 		8020073F19701B80003DDD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8020072119701B80003DDD2C /* UIKit.framework */; };
-		8020074719701B80003DDD2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8020074519701B80003DDD2C /* InfoPlist.strings */; };
-		8020074919701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8020074819701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.m */; };
 		8020075519701BDC003DDD2C /* FinalRaisedCenterTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8020075419701BDC003DDD2C /* FinalRaisedCenterTabController.m */; };
 		802007581970213B003DDD2C /* TabOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802007571970213B003DDD2C /* TabOneController.m */; };
 		8020075B197023A6003DDD2C /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8020075A197023A6003DDD2C /* ModalViewController.m */; };
@@ -53,9 +51,6 @@
 		8020073519701B80003DDD2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8020073B19701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalRaisedCenterTabControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8020073C19701B80003DDD2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8020074419701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinalRaisedCenterTabControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
-		8020074619701B80003DDD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8020074819701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalRaisedCenterTabControllerDemoTests.m; sourceTree = "<group>"; };
 		8020075319701BDC003DDD2C /* FinalRaisedCenterTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalRaisedCenterTabController.h; sourceTree = "<group>"; };
 		8020075419701BDC003DDD2C /* FinalRaisedCenterTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalRaisedCenterTabController.m; sourceTree = "<group>"; };
 		802007561970213B003DDD2C /* TabOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabOneController.h; sourceTree = "<group>"; };
@@ -92,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				8020072319701B80003DDD2C /* FinalRaisedCenterTabControllerDemo */,
-				8020074219701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests */,
 				8020071C19701B80003DDD2C /* Frameworks */,
 				8020071B19701B80003DDD2C /* Products */,
 			);
@@ -144,24 +138,6 @@
 				8020072619701B80003DDD2C /* InfoPlist.strings */,
 				8020072919701B80003DDD2C /* main.m */,
 				8020072B19701B80003DDD2C /* FinalRaisedCenterTabControllerDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8020074219701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				8020074819701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.m */,
-				8020074319701B80003DDD2C /* Supporting Files */,
-			);
-			path = FinalRaisedCenterTabControllerDemoTests;
-			sourceTree = "<group>";
-		};
-		8020074319701B80003DDD2C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8020074419701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests-Info.plist */,
-				8020074519701B80003DDD2C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8020074719701B80003DDD2C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8020074919701B80003DDD2C /* FinalRaisedCenterTabControllerDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +288,6 @@
 				8020073019701B80003DDD2C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8020074519701B80003DDD2C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8020074619701B80003DDD2C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +448,7 @@
 				8020074E19701B80003DDD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8020074F19701B80003DDD2C /* Build configuration list for PBXNativeTarget "FinalRaisedCenterTabControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +457,7 @@
 				8020075119701B80003DDD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
